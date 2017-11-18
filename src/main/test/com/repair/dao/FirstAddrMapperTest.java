@@ -17,7 +17,7 @@ public class FirstAddrMapperTest {
 
     @Test
     public void selectByPrimaryKey() throws Exception {
-        FirstAddr firstAddr=firstAddrMapper.selectByPrimaryKey(1000);
+        FirstAddr firstAddr=firstAddrMapper.selectByPrimaryKey(1);
         System.out.println(firstAddr.getName());
     }
 
