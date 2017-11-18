@@ -6,7 +6,7 @@
 
     <properties resource="datasource.properties"></properties>
     <!-- !!!! Driver Class Path !!!! -->
-    <classPathEntry location="${db.driverLocation}"/>
+    <classPathEntry location="${jdbc.driverLocation}"/>
 
     <context id="context" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -16,10 +16,10 @@
 
         <!-- !!!! Database Configurations !!!! -->
         <jdbcConnection
-                driverClass="${db.driverClassName}"
-                connectionURL="${db.url}"
-                userId="${db.username}"
-                password="${db.password}"/>
+                driverClass="${jdbc.driverClassName}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.username}"
+                password="${jdbc.password}"/>
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
