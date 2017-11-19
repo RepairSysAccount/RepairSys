@@ -252,4 +252,17 @@ public class DetectPlan {
     public void setFinishTime(Date finishTime) {
         this.finishTime = finishTime;
     }
+
+    @Override
+    public String toString() {
+        return "DetectPlan{" +
+                "number=" + number +
+                ", firstAddr=" + firstAddr +
+                ", secondAddr=" + secondAddr +
+                ", detectMan='" + detectMan + '\'' +
+                ", state=" + state +
+                ", startTime=" + startTime +
+                ", finishTime=" + finishTime +
+                '}';
+    }
 }

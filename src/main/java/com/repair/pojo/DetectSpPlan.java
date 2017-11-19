@@ -253,4 +253,17 @@ public class DetectSpPlan extends DetectSpPlanKey {
     public void setPeriod(Double period) {
         this.period = period;
     }
+
+    @Override
+    public String toString() {
+        return "DetectSpPlan{" +
+                "firstAddr=" + firstAddr +
+                ", secondId=" + secondId +
+                ", state=" + state +
+                ", detectMan='" + detectMan + '\'' +
+                ", startTime=" + startTime +
+                ", finishTime=" + finishTime +
+                ", period=" + period +
+                '}';
+    }
 }

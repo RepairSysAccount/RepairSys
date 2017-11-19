@@ -173,4 +173,5 @@
     where number = #{number,jdbcType=INTEGER}
       and device_id = #{deviceId,jdbcType=INTEGER}
   </update>
+
 </mapper>

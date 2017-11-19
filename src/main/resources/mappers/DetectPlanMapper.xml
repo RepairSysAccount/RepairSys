@@ -16,6 +16,9 @@
       <arg column="finish_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
     </constructor>
   </resultMap>
+
+
+
   <sql id="Base_Column_List">
     <!--
       WARNING - @mbggenerated
@@ -148,4 +151,24 @@
       finish_time = #{finishTime,jdbcType=TIMESTAMP}
     where number = #{number,jdbcType=INTEGER}
   </update>
+
+  <!--已完成的巡检 -->
+  <select id="getFinishDetectPlan" resultType="com.repair.pojo.dto.Detect">
+    select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
+    from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
+    where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=1
+  </select>
+
+  <!--未完成的巡检 -->
+  <select id="getUnFinishDetectPlan" resultType="com.repair.pojo.dto.Detect">
+      select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
+    from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
+    where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=0
+  </select>
+
+  <!--获取某次巡检的设备表 -->
+  <select id="getDetectDeviceByDetectId" resultType="com.repair.pojo.dto.DetectDevice">
+
+  </select>
+
 </mapper>

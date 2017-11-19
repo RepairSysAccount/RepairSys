@@ -1,6 +1,11 @@
 package com.repair.dao;
 
 import com.repair.pojo.DetectPlan;
+import com.repair.pojo.dto.Detect;
+import com.repair.pojo.dto.DetectDevice;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface DetectPlanMapper {
     /**
@@ -50,4 +55,23 @@ public interface DetectPlanMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(DetectPlan record);
+
+    /**
+     *获取已完成的巡检计划
+     * @return
+     */
+    List<Detect> getFinishDetectPlan();
+
+    /**
+     * 获取未完成的巡检列表
+     */
+    List<Detect> getUnFinishDetectPlan();
+
+
+    /**
+     * 获取某次巡检的所有设备
+     */
+    List<DetectDevice> getDetectDeviceByDetectId(@Param("id") Integer id);
+
+
 }
