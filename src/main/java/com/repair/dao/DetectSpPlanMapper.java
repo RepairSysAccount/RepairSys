@@ -2,6 +2,7 @@ package com.repair.dao;
 
 import com.repair.pojo.DetectSpPlan;
 import com.repair.pojo.DetectSpPlanKey;
+import com.repair.pojo.dto.DetectSp;
 
 import java.util.List;
 
@@ -52,17 +53,8 @@ public interface DetectSpPlanMapper {
      *
      * @mbggenerated
      */
-
-    /**
-     *
-     * @param record
-     * @return
-     */
     int updateByPrimaryKey(DetectSpPlan record);
 
 
-
-
-
-
+    List<DetectSp> selectAllDetectSp();
 }
