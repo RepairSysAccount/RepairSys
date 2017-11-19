@@ -2,6 +2,7 @@ package com.repair.dao;
 
 import com.repair.pojo.DetectPlan;
 import com.repair.pojo.dto.Detect;
+import com.repair.pojo.dto.DetectDevice;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,13 @@ public class DetectPlanMapperTest {
         List<Detect> detects = detectPlanMapper.getUnFinishDetectPlan();
         for(Detect detect : detects)
             System.out.println(detect);
+    }
+
+    @Test
+    public void testGetDetectDeviceByDetectId(){
+        List<DetectDevice> detectDevices = detectPlanMapper.getDetectDeviceByDetectId(1000);
+        for(DetectDevice detectDevice : detectDevices)
+            System.out.println(detectDevice.toString());
     }
 }
 

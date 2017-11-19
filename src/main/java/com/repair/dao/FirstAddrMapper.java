@@ -50,4 +50,9 @@ public interface FirstAddrMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(FirstAddr record);
+
+    /**
+     * 获所有的地点
+     */
+
 }

@@ -168,7 +168,9 @@
 
   <!--获取某次巡检的设备表 -->
   <select id="getDetectDeviceByDetectId" resultType="com.repair.pojo.dto.DetectDevice">
-
+      select d2.device_class ,d1.state, d1.mark
+      from tb_DetectDevices d1 , tb_Device d2
+      where d1.detect_number=#{id} and d2.device_id=d1.device_id
   </select>
 
 </mapper>

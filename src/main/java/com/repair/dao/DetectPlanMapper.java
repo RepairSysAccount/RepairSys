@@ -74,4 +74,6 @@ public interface DetectPlanMapper {
     List<DetectDevice> getDetectDeviceByDetectId(@Param("id") Integer id);
 
 
+
+
 }

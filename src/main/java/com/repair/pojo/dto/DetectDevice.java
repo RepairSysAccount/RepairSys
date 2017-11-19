@@ -4,7 +4,7 @@ package com.repair.pojo.dto;
  * 巡检的设备类
  */
 public class DetectDevice {
-    private String name;
+    private String deviceClass;
 
     private Integer state;
 
@@ -13,18 +13,18 @@ public class DetectDevice {
     public DetectDevice() {
     }
 
-    public DetectDevice(String name, Integer state, String mark) {
-        this.name = name;
+    public DetectDevice(String device_class, Integer state, String mark) {
+        this.deviceClass = device_class;
         this.state = state;
         this.mark = mark;
     }
 
-    public String getName() {
-        return name;
+    public String getDevice_class() {
+        return deviceClass;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDevice_class(String device_class) {
+        this.deviceClass = device_class;
     }
 
     public Integer getState() {
@@ -46,7 +46,7 @@ public class DetectDevice {
     @Override
     public String toString() {
         return "DetectDevice{" +
-                "name='" + name + '\'' +
+                "device_class='" + deviceClass + '\'' +
                 ", state=" + state +
                 ", mark='" + mark + '\'' +
                 '}';
