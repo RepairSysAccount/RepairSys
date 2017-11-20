@@ -243,4 +243,10 @@
       photo = #{photo,jdbcType=VARCHAR}
     where number = #{number,jdbcType=BIGINT}
   </update>
+
+
+
+  <select id="selectAllReqRecord" resultType="com.repair.pojo.ReqRecord">
+    SELECT * FROM tb_ReqRecords
+  </select>
 </mapper>
