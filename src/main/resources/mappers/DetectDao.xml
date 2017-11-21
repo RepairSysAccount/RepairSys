@@ -6,22 +6,48 @@
 <mapper namespace="com.repair.dao.DetectDao">
 
     <!--已完成的巡检 -->
-    <select id="getFinishDetect" resultType="com.repair.entity.Detect">
+    <select id="getFinishDetect" resultType="com.repair.entity.detect.Detect">
         select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
         from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
         where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=1
     </select>
 
-    <select id="getUnfinishDetect" resultType="com.repair.entity.Detect">
+    <!--查询进行中的巡检 -->
+    <select id="getUnfinishDetect" resultType="com.repair.entity.detect.Detect">
         select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
         from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
         where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=0
     </select>
 
-    <select id="getDetectDevices" resultType="com.repair.entity.DetectDevice">
+
+    <!-- 获取一个巡检计划的设备-->
+    <select id="getDetectDevices" resultType="com.repair.entity.detect.DetectDevice">
         select device_class,mark, normal ,repairing, broken
         from tb_DetectDevices d
-        where detect_id=1000
+        where detect_id=#{detectId}
     </select>
+
+    <!-- 插入一个巡检记录并返回插入的主键值-->
+    <select id="insertDetect" resultType="java.lang.Integer">
+        insert into tb_Detect(first_addr,second_addr,detect_man,state,start_time) values(#{firstAddr},#{secondAddr},'总务科',1,GETDATE());SELECT @@IDENTITY
+    </select>
+
+    <!-- 更该巡检的状态-->
+    <update id="setDetectState">
+        update tb_Detect set state=#{state} where number=#{id}
+    </update>
+
+    <!--插入巡检的设备信息 -->
+    <insert id="insertDetectDevice">
+        insert into tb_DetectDevices(device_class, detect_id, normal, repairing, broken, mark)
+        values(#{detectDevice.deviceClass},#{detectId},#{detectDevice.normal},#{detectDevice.repairing},#{detectDevice.broken},#{detectDevice.mark})
+    </insert>
+
+    <!-- 更新设备的信息-->
+    <update id="updateDetectDevice">
+        update tb_DetectDevices
+        set normal=#{detectDevice.normal}, repairing=#{detectDevice.repairing},broken=#{detectDevice.broken}
+        where device_class=#{detectDevice.deviceClass} and detect_id=#{detectId}
+    </update>
 
 </mapper>

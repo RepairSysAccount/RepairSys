@@ -1,0 +1,8 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repair.dao.DeviceDao">
+    <select id="getDeviceClass" resultType="java.lang.String">
+        select distinct device_class from tb_Device where first_addr=#{firstId} and second_addr=#{secondId}
+    </select>
+</mapper>
