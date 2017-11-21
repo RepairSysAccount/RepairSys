@@ -1,4 +1,4 @@
-package com.repair.pojo.dto;
+package com.repair.entity;
 
 /**
  * 巡检的设备类

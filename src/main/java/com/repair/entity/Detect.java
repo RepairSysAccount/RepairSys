@@ -1,4 +1,4 @@
-package com.repair.pojo.dto;
+package com.repair.entity;
 
 import java.util.Date;
 
