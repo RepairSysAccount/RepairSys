@@ -6,19 +6,19 @@
 <mapper namespace="com.repair.dao.DetectDao">
 
     <!--已完成的巡检 -->
-    <select id="getFinishDetect" resultType="com.repair.entity.Detect">
+    <select id="getFinishDetect" resultType="com.repair.entity.detect.Detect">
         select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
         from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
         where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=1
     </select>
 
-    <select id="getUnfinishDetect" resultType="com.repair.entity.Detect">
+    <select id="getUnfinishDetect" resultType="com.repair.entity.detect.Detect">
         select d.number,d.state,f.name as 'first_location', s.name as 'second_location', d.detect_man, d.start_time
         from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
         where d.first_addr=f.first_no and d.second_addr=s.second_no and d.state=0
     </select>
 
-    <select id="getDetectDevices" resultType="com.repair.entity.DetectDevice">
+    <select id="getDetectDevices" resultType="com.repair.entity.detect.DetectDevice">
         select device_class,mark, normal ,repairing, broken
         from tb_DetectDevices d
         where detect_id=1000

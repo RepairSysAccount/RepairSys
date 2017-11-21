@@ -6,6 +6,11 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>RepairSys Maven Webapp</name>
+
+
+  <properties>
+    <jackson.version>2.5.4</jackson.version>
+  </properties>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -167,10 +172,13 @@
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>mssql-jdbc</artifactId>
       <version>6.1.0.jre8</version>
-      <scope>test</scope>
     </dependency>
 
-
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
 
   </dependencies>
   <build>

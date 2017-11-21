@@ -1,7 +1,7 @@
 package com.repair.dao;
 
-import com.repair.entity.Detect;
-import com.repair.entity.DetectDevice;
+import com.repair.entity.detect.Detect;
+import com.repair.entity.detect.DetectDevice;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
