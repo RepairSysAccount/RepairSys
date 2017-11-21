@@ -1,4 +1,4 @@
-package com.repair.entity;
+package com.repair.entity.detect;
 
 import java.util.Date;
 

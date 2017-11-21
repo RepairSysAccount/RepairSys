@@ -1,4 +1,4 @@
-package com.repair.entity;
+package com.repair.entity.detect;
 
 /**
  * 巡检的设备类
