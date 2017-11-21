@@ -58,5 +58,5 @@ public interface DeviceClassMapper {
      * 获取设备列表,网站后台设备管理
      * @return
      */
-    List<DeviceClass> selectAllDevices();
+    List<DeviceClass> getAllDevices();
 }

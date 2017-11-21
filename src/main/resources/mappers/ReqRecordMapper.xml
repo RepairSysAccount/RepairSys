@@ -246,7 +246,7 @@
 
 
 
-  <select id="selectAllReqRecord" resultType="com.repair.pojo.ReqRecord">
+  <select id="getAllReqRecord" resultType="com.repair.pojo.ReqRecord">
     SELECT * FROM tb_ReqRecords
   </select>
 </mapper>

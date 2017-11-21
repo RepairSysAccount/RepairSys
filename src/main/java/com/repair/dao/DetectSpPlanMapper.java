@@ -55,6 +55,9 @@ public interface DetectSpPlanMapper {
      */
     int updateByPrimaryKey(DetectSpPlan record);
 
-
-    List<DetectSp> selectAllDetectSp();
+    /**
+     * 获取所有巡查记录(微信端)
+     * @return
+     */
+    List<DetectSp> getAllDetectSp();
 }

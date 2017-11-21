@@ -176,7 +176,7 @@
 
 
 
-  <select id="selectAllDetectSp" resultType="com.repair.pojo.dto.DetectSp">
+  <select id="getAllDetectSp" resultType="com.repair.pojo.dto.DetectSp">
     select tb_Device.device_class,tb_FirstAddr.name as first_addr,tb_SecondAddr.name as second_addr
       from tb_DetectSpecially,tb_FirstAddr,tb_SecondAddr,tb_Device
       where tb_DetectSpecially.first_addr=tb_FirstAddr.first_no

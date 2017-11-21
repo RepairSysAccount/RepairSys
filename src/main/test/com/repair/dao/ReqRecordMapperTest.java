@@ -20,7 +20,7 @@ public class ReqRecordMapperTest {
     private ReqRecordMapper reqRecordMapper;
     @Test
     public void selectAllReqRecord() throws Exception {
-        List<ReqRecord> list=reqRecordMapper.selectAllReqRecord();
+        List<ReqRecord> list=reqRecordMapper.getAllReqRecord();
         for(ReqRecord re:list) {
             System.out.println(re);
         }

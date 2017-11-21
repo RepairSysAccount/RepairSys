@@ -140,7 +140,7 @@
 
 
 
-  <select id="selectAllDevices" resultType="com.repair.pojo.DeviceClass">
+  <select id="getAllDevices" resultType="com.repair.pojo.DeviceClass">
     select dc.name,dc.category,dc.brand,dc.model,dc.quantity,rd.depat_name as repair_dept
     from tb_DeviceClass dc,tb_RepairDept rd
     where dc.repair_dept=rd.number

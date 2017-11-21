@@ -18,7 +18,7 @@ public class DeviceClassMapperTest {
     private DeviceClassMapper deviceClassMapper;
     @Test
     public void selectAllDevices() throws Exception {
-        List<DeviceClass> list=deviceClassMapper.selectAllDevices();
+        List<DeviceClass> list=deviceClassMapper.getAllDevices();
         for(DeviceClass deviceClass:list) {
             System.out.println(deviceClass);
         }

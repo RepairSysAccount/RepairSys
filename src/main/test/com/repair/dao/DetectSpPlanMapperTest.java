@@ -19,7 +19,7 @@ public class DetectSpPlanMapperTest {
     DetectSpPlanMapper detectSpPlanMapper;
     @Test
     public void selectAllDetectSp() throws Exception {
-        List<DetectSp> detectSp= detectSpPlanMapper.selectAllDetectSp();
+        List<DetectSp> detectSp= detectSpPlanMapper.getAllDetectSp();
         for(DetectSp sd:detectSp){
             System.out.println(sd);
         }

@@ -57,5 +57,5 @@ public interface ReqRecordMapper {
      * 获取所有派工（报修）记录
      * @return
      */
-    List<ReqRecord> selectAllReqRecord();
+    List<ReqRecord> getAllReqRecord();
 }

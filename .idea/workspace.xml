@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f610bba6-2d92-481a-8de3-34cb13d4483a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/dao/SecondAddrMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/dao/SecondAddrMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,28 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReqRecordMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml">
+      <file leaf-file-name="FirstAddrMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="248" column="2" lean-forward="false" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
-              <folding>
-                <marker date="1511101104125" expanded="true" signature="2211:2327" ph="select from tb_ReqRecords" />
-                <marker date="1511101104125" expanded="true" signature="2541:2611" ph="delete from " />
-                <marker date="1511101104125" expanded="true" signature="2824:3542" ph="insert into tb_ReqRecords... " />
-                <marker date="1511101104125" expanded="true" signature="6458:7923" ph="update tb_Re... " />
-                <marker date="1511101104125" expanded="true" signature="8148:8887" ph="update tb_Re... " />
-                <marker date="1511101104125" expanded="true" signature="8981:9008" ph="SELECT * FRO... tb_ReqRecords" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceClassMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="1288">
+              <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,63 +40,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadMe.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReadMe.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceClassMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java">
+      <file leaf-file-name="FirstAddrMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceClassMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml">
+      <file leaf-file-name="SecondAddrMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/SecondAddrMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="142" column="2" lean-forward="false" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="2" />
+            <state relative-caret-position="655">
+              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               <folding>
-                <marker date="1511138416220" expanded="true" signature="1375:1489" ph="select from tb_DeviceClass" />
-                <marker date="1511138416220" expanded="true" signature="1704:1772" ph="delete from " />
-                <marker date="1511138416220" expanded="true" signature="1986:2278" ph="insert into tb_DeviceClass... " />
-                <marker date="1511138416220" expanded="true" signature="3768:4321" ph="update tb_De... " />
-                <marker date="1511138416220" expanded="true" signature="4547:4839" ph="update tb_De... " />
-                <marker date="1511138416220" expanded="true" signature="4933:5097" ph="select dc.na... tb_DeviceClass" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/DeviceClass.java">
+      <file leaf-file-name="DetectSpPlanMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state relative-caret-position="253">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReqRecordMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java">
+      <file leaf-file-name="FirstAddr.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+            <state relative-caret-position="460">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstAddrMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1511142109332" expanded="true" signature="1116:1235" ph="select from tb_FirstAddr" />
+                <marker date="1511142109332" expanded="true" signature="1327:1353" ph="select * fro... tb_FirstAddr" />
+                <marker date="1511142109332" expanded="true" signature="1573:1646" ph="delete from " />
+                <marker date="1511142109332" expanded="true" signature="1858:2024" ph="insert into tb_FirstAddr... " />
+                <marker date="1511142109332" expanded="true" signature="3076:3350" ph="update tb_Fi... " />
+                <marker date="1511142109332" expanded="true" signature="3574:3733" ph="update tb_Fi... " />
               </folding>
             </state>
           </provider>
@@ -109,29 +102,41 @@
       <file leaf-file-name="ReqRecordMapperTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+            <state relative-caret-position="368">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="DeviceClassMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="230">
+              <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReqRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/ReqRecord.java">
+      <file leaf-file-name="DetectPlanMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectPlanMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10120">
-              <caret line="496" column="18" lean-forward="false" selection-start-line="496" selection-start-column="18" selection-end-line="496" selection-end-column="18" />
+            <state relative-caret-position="345">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceClassMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1334">
+              <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,33 +164,36 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/datasource.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/dto/DetectPlan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/DetectSpPlan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/DetectPlan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/dto/Detect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
         <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/DetectPlanMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/DetectPlanMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/dto/DetectDevice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/DetectPlanMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/ReqRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/DeviceClass.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/repair/dao/SecondAddrMapper.java" />
       </list>
     </option>
   </component>
@@ -259,6 +267,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -292,34 +303,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="repair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RepairSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RepairSys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repair" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RepairSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RepairSys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repair" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RepairSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RepairSys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repair" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RepairSys" type="b2602c69:ProjectViewProjectNode" />
@@ -366,9 +349,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeviceClassMapperTest.selectAllDevices">
+  <component name="RunManager" selected="JUnit.FirstAddrMapperTest.getAllFirstAddr">
     <configuration name="DetectPlanMapperTest.testGetDetectDeviceByDetectId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -415,31 +395,6 @@
       <option name="PACKAGE_NAME" value="com.repair.dao" />
       <option name="MAIN_CLASS_NAME" value="com.repair.dao.DetectPlanMapperTest" />
       <option name="METHOD_NAME" value="testGetDetectDeviceByDetectId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DetectPlanMapperTest.testUnFnishDetectPlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.repair.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RepairSys" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.repair.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.repair.dao.DetectPlanMapperTest" />
-      <option name="METHOD_NAME" value="testUnFnishDetectPlan" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -490,6 +445,31 @@
       <option name="PACKAGE_NAME" value="com.repair.dao" />
       <option name="MAIN_CLASS_NAME" value="com.repair.dao.DeviceClassMapperTest" />
       <option name="METHOD_NAME" value="selectAllDevices" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="FirstAddrMapperTest.getAllFirstAddr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.repair.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RepairSys" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.repair.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.repair.dao.FirstAddrMapperTest" />
+      <option name="METHOD_NAME" value="getAllFirstAddr" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -621,19 +601,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testUnFnishDetectPlan" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testGetDetectDeviceByDetectId" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.DetectSpPlanMapperTest.selectAllDetectSp" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ReqRecordMapperTest.selectAllReqRecord" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.DeviceClassMapperTest.selectAllDevices" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testGetDetectDeviceByDetectId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DetectSpPlanMapperTest.selectAllDetectSp" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ReqRecordMapperTest.selectAllReqRecord" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DeviceClassMapperTest.selectAllDevices" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstAddrMapperTest.getAllFirstAddr" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DeviceClassMapperTest.selectAllDevices" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ReqRecordMapperTest.selectAllReqRecord" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DetectSpPlanMapperTest.selectAllDetectSp" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testGetDetectDeviceByDetectId" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testUnFnishDetectPlan" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstAddrMapperTest.getAllFirstAddr" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DeviceClassMapperTest.selectAllDevices" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ReqRecordMapperTest.selectAllReqRecord" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DetectSpPlanMapperTest.selectAllDetectSp" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DetectPlanMapperTest.testGetDetectDeviceByDetectId" />
       </list>
     </recent_temporary>
   </component>
@@ -662,7 +642,8 @@
       <workItem from="1511097460338" duration="2436000" />
       <workItem from="1511100207607" duration="1090000" />
       <workItem from="1511105143205" duration="3126000" />
-      <workItem from="1511136161604" duration="2622000" />
+      <workItem from="1511136161604" duration="4938000" />
+      <workItem from="1511245858513" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="配置了spring-service.xml和spring-web.xml">
       <created>1511060275373</created>
@@ -699,13 +680,17 @@
       <option name="project" value="LOCAL" />
       <updated>1511138531094</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成了显示设备列表,也就是网站上设备管理的接口">
+      <created>1511138814027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511138814027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DetectPlanMapperTest_testGetAllDetectPlan - 2017.11.19 at 19h 56m 24s.xml">
-      <configuration name="DetectPlanMapperTest.testGetAllDetectPlan" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DetectPlanMapperTest_testGetDetectDeviceByDetectId - 2017.11.19 at 21h 41m 24s.xml">
       <configuration name="DetectPlanMapperTest.testGetDetectDeviceByDetectId" configurationId="JUnit" />
     </history-entry>
@@ -730,47 +715,50 @@
     <history-entry file="DeviceClassMapperTest_selectAllDevices - 2017.11.20 at 08h 40m 20s.xml">
       <configuration name="DeviceClassMapperTest.selectAllDevices" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstAddrMapperTest_getAllFirstAddr - 2017.11.20 at 09h 49m 02s.xml">
+      <configuration name="FirstAddrMapperTest.getAllFirstAddr" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ReqRecordMapperTest_selectAllReqRecord - 2017.11.19 at 22h 21m 13s.xml">
       <configuration name="ReqRecordMapperTest.selectAllReqRecord" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32244000" />
+    <option name="totallyTimeSpent" value="35192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60750854" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42511347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6183746" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60750854" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42511347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42638397" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34393403" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21995708" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11514196" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6183746" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -783,53 +771,16 @@
     <MESSAGE value="配置了spring-service.xml和spring-web.xml" />
     <MESSAGE value="完成了部分巡检的接口" />
     <MESSAGE value="完成了显示设备列表的接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了显示设备列表的接口" />
+    <MESSAGE value="完成了显示设备列表,也就是网站上设备管理的接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了显示设备列表,也就是网站上设备管理的接口" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/datasource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -882,13 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/DetectPlan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -924,14 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DetectPlanMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="157" column="44" lean-forward="true" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/dto/DetectDevice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -939,24 +875,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DetectPlanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/SecondAddr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,59 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="78" column="2" lean-forward="false" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
-          <folding>
-            <marker date="1511100179294" expanded="true" signature="1116:1235" ph="select from tb_FirstAddr" />
-            <marker date="1511100179294" expanded="true" signature="1451:1524" ph="delete from " />
-            <marker date="1511100179294" expanded="true" signature="1736:1902" ph="insert into tb_FirstAddr... " />
-            <marker date="1511100179294" expanded="true" signature="2954:3228" ph="update tb_Fi... " />
-            <marker date="1511100179294" expanded="true" signature="3452:3611" ph="update tb_Fi... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectPlanMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,22 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3887">
-          <caret line="169" column="46" lean-forward="false" selection-start-line="169" selection-start-column="46" selection-end-line="169" selection-end-column="46" />
-          <folding>
-            <marker date="1511100179293" expanded="true" signature="1687:1860" ph="select from tb_DetectSpecially" />
-            <marker date="1511100179293" expanded="true" signature="2090:2217" ph="delete from " />
-            <marker date="1511100179293" expanded="true" signature="2432:2882" ph="insert into tb_DetectSpecially... " />
-            <marker date="1511100179293" expanded="true" signature="4860:5683" ph="update tb_De... " />
-            <marker date="1511100179293" expanded="true" signature="5910:6370" ph="update tb_De... " />
-            <marker date="1511100179293" expanded="true" signature="6466:6814" ph="select tb_De... tb_DetectSpecially" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,67 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="248" column="2" lean-forward="false" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
-          <folding>
-            <marker date="1511101104125" expanded="true" signature="2211:2327" ph="select from tb_ReqRecords" />
-            <marker date="1511101104125" expanded="true" signature="2541:2611" ph="delete from " />
-            <marker date="1511101104125" expanded="true" signature="2824:3542" ph="insert into tb_ReqRecords... " />
-            <marker date="1511101104125" expanded="true" signature="6458:7923" ph="update tb_Re... " />
-            <marker date="1511101104125" expanded="true" signature="8148:8887" ph="update tb_Re... " />
-            <marker date="1511101104125" expanded="true" signature="8981:9008" ph="SELECT * FRO... tb_ReqRecords" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="142" column="2" lean-forward="false" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="2" />
-          <folding>
-            <marker date="1511138416220" expanded="true" signature="1375:1489" ph="select from tb_DeviceClass" />
-            <marker date="1511138416220" expanded="true" signature="1704:1772" ph="delete from " />
-            <marker date="1511138416220" expanded="true" signature="1986:2278" ph="insert into tb_DeviceClass... " />
-            <marker date="1511138416220" expanded="true" signature="3768:4321" ph="update tb_De... " />
-            <marker date="1511138416220" expanded="true" signature="4547:4839" ph="update tb_De... " />
-            <marker date="1511138416220" expanded="true" signature="4933:5097" ph="select dc.na... tb_DeviceClass" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,16 +985,226 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DetectPlanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="169" column="2" lean-forward="false" selection-start-line="169" selection-start-column="2" selection-end-line="169" selection-end-column="2" />
+          <folding>
+            <marker date="1511100179293" expanded="true" signature="1493:1606" ph="select from tb_Detect" />
+            <marker date="1511100179293" expanded="true" signature="1822:1889" ph="delete from " />
+            <marker date="1511100179293" expanded="true" signature="2102:2457" ph="insert into tb_Detect... " />
+            <marker date="1511100179293" expanded="true" signature="4138:4818" ph="update tb_De... " />
+            <marker date="1511100179293" expanded="true" signature="5043:5405" ph="update tb_De... " />
+            <marker date="1511100179293" expanded="true" signature="5516:5755" ph="select d.num... tb_Detect" />
+            <marker date="1511100179293" expanded="true" signature="5870:6109" ph="select d.num... tb_Detect" />
+            <marker date="1511100179293" expanded="true" signature="6238:6390" ph="select d2.de... tb_DetectDevices" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/RepairSolutionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/RepairManMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DetectRecordsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DetectPlanMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DetectSpPlanMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="178" column="16" lean-forward="false" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
+          <folding>
+            <marker date="1511142109300" expanded="true" signature="1687:1860" ph="select from tb_DetectSpecially" />
+            <marker date="1511142109300" expanded="true" signature="2090:2217" ph="delete from " />
+            <marker date="1511142109300" expanded="true" signature="2432:2882" ph="insert into tb_DetectSpecially... " />
+            <marker date="1511142109300" expanded="true" signature="4860:5683" ph="update tb_De... " />
+            <marker date="1511142109300" expanded="true" signature="5910:6370" ph="update tb_De... " />
+            <marker date="1511142109300" expanded="true" signature="6463:6811" ph="select tb_De... tb_DetectSpecially" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DetectSpPlanMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
-          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/RepairDeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ReqRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="248" column="16" lean-forward="false" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+          <folding>
+            <marker date="1511142109316" expanded="true" signature="2211:2327" ph="select from tb_ReqRecords" />
+            <marker date="1511142109316" expanded="true" signature="2541:2611" ph="delete from " />
+            <marker date="1511142109316" expanded="true" signature="2824:3542" ph="insert into tb_ReqRecords... " />
+            <marker date="1511142109316" expanded="true" signature="6458:7923" ph="update tb_Re... " />
+            <marker date="1511142109316" expanded="true" signature="8148:8887" ph="update tb_Re... " />
+            <marker date="1511142109316" expanded="true" signature="8978:9005" ph="SELECT * FRO... tb_ReqRecords" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/ReqRecordMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/DeviceClassMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="142" column="16" lean-forward="false" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+          <folding>
+            <marker date="1511142109282" expanded="true" signature="1375:1489" ph="select from tb_DeviceClass" />
+            <marker date="1511142109282" expanded="true" signature="1704:1772" ph="delete from " />
+            <marker date="1511142109282" expanded="true" signature="1986:2278" ph="insert into tb_DeviceClass... " />
+            <marker date="1511142109282" expanded="true" signature="3768:4321" ph="update tb_De... " />
+            <marker date="1511142109282" expanded="true" signature="4547:4839" ph="update tb_De... " />
+            <marker date="1511142109282" expanded="true" signature="4930:5094" ph="select dc.na... tb_DeviceClass" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/DeviceClassMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="60" column="22" lean-forward="false" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/FirstAddrMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <marker date="1511142109332" expanded="true" signature="1116:1235" ph="select from tb_FirstAddr" />
+            <marker date="1511142109332" expanded="true" signature="1327:1353" ph="select * fro... tb_FirstAddr" />
+            <marker date="1511142109332" expanded="true" signature="1573:1646" ph="delete from " />
+            <marker date="1511142109332" expanded="true" signature="1858:2024" ph="insert into tb_FirstAddr... " />
+            <marker date="1511142109332" expanded="true" signature="3076:3350" ph="update tb_Fi... " />
+            <marker date="1511142109332" expanded="true" signature="3574:3733" ph="update tb_Fi... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/FirstAddrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/pojo/FirstAddr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/ReqRecordMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectPlanMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DetectSpPlanMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/DeviceClassMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" column="51" lean-forward="false" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/repair/dao/FirstAddrMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/repair/dao/SecondAddrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
