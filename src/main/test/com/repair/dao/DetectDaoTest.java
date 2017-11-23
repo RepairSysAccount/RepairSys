@@ -1,4 +1,4 @@
-package test.dao;
+package com.repair.dao;
 
 import com.repair.dao.DetectDao;
 import com.repair.entity.detect.Detect;
