@@ -19,6 +19,17 @@ public interface ReqRecordsDAO {
      */
     List<ReqRecord> getAllReqRecord();
 
+    /**
+     * 获取指定地址设备数量
+     * @return
+     */
+    Integer getAddressDeviceNum(@Param("firstAddr")Integer firstAddr,@Param("secondAddr")Integer secondAddr);
 
-    Integer getAddressDeviceNum();
+
+
+    /**
+     * 获取指定地址设备种类数量
+     * @return
+     */
+    Integer getAddressClassNum(@Param("firstAddr")Integer firstAddr, @Param("secondAddr")Integer secondAddr);
 }

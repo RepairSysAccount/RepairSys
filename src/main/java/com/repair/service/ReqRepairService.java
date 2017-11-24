@@ -39,5 +39,20 @@ public interface ReqRepairService {
     ReqMan getReqMan(Integer jobNumber);
 
 
+    /**
+     * 获取指定地点的设备数量
+     * @param firstAddr
+     * @param secondAddr
+     * @return
+     */
+    Integer getAddressDeviceNum(Integer firstAddr,Integer secondAddr);
 
+
+    /**
+     * 获取指定地点的设备种类数量
+     * @param firstAddr
+     * @param secondAddr
+     * @return
+     */
+    Integer getAddressClassNum(Integer firstAddr, Integer secondAddr);
 }

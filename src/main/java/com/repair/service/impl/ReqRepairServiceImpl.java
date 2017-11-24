@@ -43,4 +43,14 @@ public class ReqRepairServiceImpl implements ReqRepairService{
     public ReqMan getReqMan(Integer jobNumber) {
         return manDAO.getReqMan(jobNumber);
     }
+
+    @Override
+    public Integer getAddressDeviceNum(Integer firstAddr, Integer secondAddr) {
+        return reqRecordsDAO.getAddressDeviceNum(firstAddr,secondAddr);
+    }
+
+    @Override
+    public Integer getAddressClassNum(Integer firstAddr, Integer secondAddr) {
+        return reqRecordsDAO.getAddressClassNum(firstAddr,secondAddr);
+    }
 }

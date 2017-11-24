@@ -28,6 +28,14 @@
     </select>
 
     <select id="getAddressDeviceNum" resultType="java.lang.Integer">
+        select count(device_id)
+        from tb_Device
+        where first_addr=#{firstAddr} and second_addr=#{secondAddr}
+    </select>
 
+    <select id="getAddressClassNum" resultType="java.lang.Integer">
+        select count(distinct device_class)
+        from tb_Device
+        where first_addr=#{firstAddr} and second_addr=#{secondAddr}
     </select>
 </mapper>
