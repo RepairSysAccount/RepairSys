@@ -5,4 +5,24 @@
     <select id="getDeviceClass" resultType="java.lang.String">
         select distinct device_class from tb_Device where first_addr=#{firstId} and second_addr=#{secondId}
     </select>
+
+
+    <select id="getDeviceRepairDict" resultType="com.repair.entity.dictionary.RepairDict">
+        select dict_no,device_class,problem,solution
+        from tb_RepairSolution
+    </select>
+
+
+    <select id="getDeviceProblem" resultType="java.lang.String">
+        select distinct problem
+        from tb_RepairSolution
+        where device_class=#{deviceClass}
+    </select>
+
+
+    <select id="getDeviceSolution" resultType="java.lang.String">
+        select solution
+        from tb_RepairSolution
+        where device_class=#{deviceClass} and problem=#{problem}
+    </select>
 </mapper>
