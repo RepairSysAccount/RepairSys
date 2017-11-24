@@ -50,4 +50,8 @@
         where device_class=#{detectDevice.deviceClass} and detect_id=#{detectId}
     </update>
 
+    <update id="singature">
+        update tb_Detect set state=2 where number=#{detectId}
+    </update>
+
 </mapper>
