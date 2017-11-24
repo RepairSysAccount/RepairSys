@@ -3,25 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd" default-autowire="byName">
-
-
-    <!--&lt;!&ndash;一些配置&ndash;&gt;-->
-    <!--<bean id="propertyConfigurer"-->
-          <!--class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
-        <!--<property name="order" value="2"/>-->
-        <!--<property name="ignoreUnresolvablePlaceholders" value="true"/>-->
-        <!--<property name="locations">-->
-            <!--<list>-->
-                <!--<value>classpath:datasource.properties</value>-->
-            <!--</list>-->
-        <!--</property>-->
-        <!--<property name="fileEncoding" value="utf-8"/>-->
-    <!--</bean>-->
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 
     <!-- Spring整合Mybatis -->
-    <context:property-placeholder location="classpath:datasource.properties" />
     <context:component-scan base-package="com.repair" />
     <!--数据库的连接池 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

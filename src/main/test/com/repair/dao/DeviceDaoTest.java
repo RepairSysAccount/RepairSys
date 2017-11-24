@@ -1,4 +1,4 @@
-package test.dao;
+package com.repair.dao;
 
 import com.repair.dao.DeviceDao;
 import org.junit.Test;
