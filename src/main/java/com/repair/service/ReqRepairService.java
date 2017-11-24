@@ -8,8 +8,11 @@ public interface ReqRepairService {
 
     List<RepairDict> getDeviceRepairDict();
 
-//    List<String> getDeviceSolution(String deviceClass,String problem);
-
+    /**
+     * 获取
+     * @param deviceClass
+     * @return
+     */
     List<String> getDeviceProblem(String deviceClass);
 
 

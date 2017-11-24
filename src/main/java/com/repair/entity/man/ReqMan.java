@@ -49,4 +49,14 @@ public class ReqMan {
     public void setPhone(BigInteger phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+        return "ReqMan{" +
+                "jobNumber=" + jobNumber +
+                ", name='" + name + '\'' +
+                ", office='" + office + '\'' +
+                ", phone=" + phone +
+                '}';
+    }
 }
