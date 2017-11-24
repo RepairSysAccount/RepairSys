@@ -26,7 +26,7 @@ public interface DetectDao {
 
     /**
      *根据巡检计划获取某一次巡检的所有设备及每个设备的状况
-     * @param detectId 设备id
+     * @param detectId 巡检计划id
      * @return
      */
     List<DetectDevice> getDetectDevices(@Param("detectId")Integer detectId);
@@ -59,5 +59,9 @@ public interface DetectDao {
      * @param id
      */
     void setDetectState(@Param("id")Integer id, @Param("state")Integer state);
+
+
+    //签名
+    void singature(@Param("detectId")Integer detectId);
 
 }
