@@ -26,10 +26,10 @@ public interface DetectDao {
 
     /**
      *根据巡检计划获取某一次巡检的所有设备及每个设备的状况
-     * @param detectId 巡检计划id
      * @return
      */
-    List<DetectDevice> getDetectDevices(@Param("detectId")Integer detectId);
+    List<DetectDevice> getDetectDevices(@Param("deviceClass")String deviceClass,
+                                        @Param("detectId")Integer detectId);
 
 
     /**
@@ -38,20 +38,23 @@ public interface DetectDao {
      *插入的同时，获取插入的自增主键（巡检计划的编号）
      *再根据获取的主键值插入这个巡检计划的设备信息
      */
-    Integer insertDetect(@Param("firstAddr")Integer firstAddr, @Param("secondAddr")Integer secondAddr);
+    Integer insertDetect(@Param("firstAddr")Integer firstAddr,
+                         @Param("secondAddr")Integer secondAddr);
 
 
     /**
      * 根据获取的巡检计划的编号插入设备
      * 保存一个巡检的每种设备的状况
      */
-    void insertDetectDevice(@Param("detectDevice")DetectDevice detectDevice,@Param("detectId")Integer detectId);
-
-
-    /**
-     * 对一个进行中的巡检计划的设备的信息可以进行多次的修改
-     */
-    void updateDetectDevice(@Param("detectDevice")DetectDevice detectDevice, @Param("detectId") Integer detectId);
+    void insertDetectDevice(@Param("detectDevice")DetectDevice detectDevice,
+                            @Param("detectId")Integer detectId);
+//
+//
+//    /**
+//     * 对一个进行中的巡检计划的设备的信息可以进行多次的修改
+//     */
+    void updateDetectDevice(@Param("detectDevice")DetectDevice detectDevice,
+                            @Param("detectId") Integer detectId);
 
 
     /**
@@ -63,5 +66,12 @@ public interface DetectDao {
 
     //签名
     void singature(@Param("detectId")Integer detectId);
+
+
+    //获取detect的已检数量
+    Integer getDetectNum(@Param("detectId")Integer detectId);
+
+    //根据巡检计划的id获取巡检的设备的类别
+    List<String> getDeviceClassByDetectId(@Param("detectId")Integer detectId);
 
 }

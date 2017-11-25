@@ -22,14 +22,22 @@
 
     <!-- 获取一个巡检计划的设备-->
     <select id="getDetectDevices" resultType="com.repair.entity.detect.DetectDevice">
-        select device_class,mark, normal ,repairing, broken
+        select device_id, state
         from tb_DetectDevices d
-        where detect_id=#{detectId}
+        where d.detect_id=#{detectId} and d.device_class=#{deviceClass}
     </select>
 
     <!-- 插入一个巡检记录并返回插入的主键值-->
     <select id="insertDetect" resultType="java.lang.Integer">
-        insert into tb_Detect(first_addr,second_addr,detect_man,state,start_time) values(#{firstAddr},#{secondAddr},'总务科',1,GETDATE());SELECT @@IDENTITY
+        insert into tb_Detect(first_addr,second_addr,detect_man,state,start_time) values(#{firstAddr},#{secondAddr},'总务科',0,GETDATE());SELECT @@IDENTITY
+    </select>
+
+    <select id="getDetectNum" resultType="java.lang.Integer">
+        select detected_num from tb_Detect where number=#{detectId}
+    </select>
+
+    <select id="getDeviceClassByDetectId" resultType="java.lang.String">
+        select distinct device_class from tb_DetectDevices where detect_id=#{detectId}
     </select>
 
     <!-- 更该巡检的状态-->
@@ -39,15 +47,13 @@
 
     <!--插入巡检的设备信息 -->
     <insert id="insertDetectDevice">
-        insert into tb_DetectDevices(device_class, detect_id, normal, repairing, broken, mark)
-        values(#{detectDevice.deviceClass},#{detectId},#{detectDevice.normal},#{detectDevice.repairing},#{detectDevice.broken},#{detectDevice.mark})
+        insert into tb_DetectDevices (device_id, device_class, detect_id, state)
+	    values(#{detectDevice.deviceId},#{detectDevice.deviceClass},#{detectId},#{detectDevice.state})
     </insert>
 
     <!-- 更新设备的信息-->
     <update id="updateDetectDevice">
-        update tb_DetectDevices
-        set normal=#{detectDevice.normal}, repairing=#{detectDevice.repairing},broken=#{detectDevice.broken}
-        where device_class=#{detectDevice.deviceClass} and detect_id=#{detectId}
+        update tb_DetectDevices set state=#{detectDevice.state} where detect_id=#{detectId} and device_id=#{detectDevice.deviceId}
     </update>
 
     <update id="singature">

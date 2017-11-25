@@ -4,25 +4,17 @@ package com.repair.entity.detect;
  * 巡检的设备
  */
 public class DetectDevice {
-    private String deviceClass;
-
-    private String mark;
-
-    private int normal;
-
-    private int repairing;
-
-    private int broken;
+   private String deviceClass;
+   private Integer state;
+   private Integer deviceId;
 
     public DetectDevice() {
     }
 
-    public DetectDevice(String deviceClass, String mark, int normal, int repairing, int broken) {
+    public DetectDevice(String deviceClass,  Integer state, Integer deviceId) {
         this.deviceClass = deviceClass;
-        this.mark = mark;
-        this.normal = normal;
-        this.repairing = repairing;
-        this.broken = broken;
+        this.state = state;
+        this.deviceId = deviceId;
     }
 
     public String getDeviceClass() {
@@ -33,46 +25,29 @@ public class DetectDevice {
         this.deviceClass = deviceClass;
     }
 
-    public String getMark() {
-        return mark;
+
+    public Integer getState() {
+        return state;
     }
 
-    public void setMark(String mark) {
-        this.mark = mark;
+    public void setState(Integer state) {
+        this.state = state;
     }
 
-    public int getNormal() {
-        return normal;
+    public Integer getDeviceId() {
+        return deviceId;
     }
 
-    public void setNormal(int normal) {
-        this.normal = normal;
-    }
-
-    public int getRepairing() {
-        return repairing;
-    }
-
-    public void setRepairing(int repairing) {
-        this.repairing = repairing;
-    }
-
-    public int getBroken() {
-        return broken;
-    }
-
-    public void setBroken(int broken) {
-        this.broken = broken;
+    public void setDeviceId(Integer deviceId) {
+        this.deviceId = deviceId;
     }
 
     @Override
     public String toString() {
         return "DetectDevice{" +
                 "deviceClass='" + deviceClass + '\'' +
-                ", mark='" + mark + '\'' +
-                ", normal=" + normal +
-                ", repairing=" + repairing +
-                ", broken=" + broken +
+                ", state=" + state +
+                ", deviceId=" + deviceId +
                 '}';
     }
 }

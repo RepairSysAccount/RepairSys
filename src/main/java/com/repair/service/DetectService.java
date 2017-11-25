@@ -32,7 +32,7 @@ public interface DetectService {
      * @param detectId
      * @return
      */
-    List<DetectDevice> getDetectDevices(Integer detectId);
+    List<DetectDevice> getDetectDevices(String deviceClass, Integer detectId);
 
 
     /**
@@ -63,12 +63,26 @@ public interface DetectService {
      */
     void setDetectState(Integer id, Integer state);
 
+    /**
+     * 根据巡检计划获取设备类型
+     */
+    List<String> getDeviceClassByDetectId(Integer detectId);
+
 
     /**
      * 根据一级地点和二级地点获取所有的设备类型
      * @return
      */
     List<String> getDeviceClass(Integer firstId, Integer secondId);
+
+
+    /**
+     * 根据巡检计划查询已检数量
+     * @param detectId
+     * @return
+     */
+    Integer getDetectNum(Integer detectId);
+
 
 
     //获取全部一级地址

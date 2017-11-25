@@ -34,11 +34,11 @@ public class DetectServiceImpl implements DetectService {
         return detectDao.getUnfinishDetect();
     }
 
-    @Override
-    public List<DetectDevice> getDetectDevices(Integer detectId) {
-        return detectDao.getDetectDevices(detectId);
-    }
 
+    @Override
+    public List<DetectDevice> getDetectDevices(String deviceClass, Integer detectId) {
+        return detectDao.getDetectDevices(deviceClass,detectId);
+    }
 
     @Override
     public Integer insertDetect(Integer firstAddr, Integer secondAddr) {
@@ -58,6 +58,11 @@ public class DetectServiceImpl implements DetectService {
     @Override
     public void setDetectState(Integer id, Integer state) {
         detectDao.setDetectState(id, state);
+    }
+
+    @Override
+    public List<String> getDeviceClassByDetectId(Integer detectId) {
+        return detectDao.getDeviceClassByDetectId(detectId);
     }
 
     @Override
@@ -87,6 +92,11 @@ public class DetectServiceImpl implements DetectService {
 
     @Override
     public Address getAddressByDetectId(Integer detectId) {
-        return  addressDao.getAddressByDetectId(detectId);
+        return addressDao.getAddressByDetectId(detectId);
+    }
+
+    @Override
+    public Integer getDetectNum(Integer detectId) {
+        return  detectDao.getDetectNum(detectId);
     }
 }

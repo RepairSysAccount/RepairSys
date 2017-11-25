@@ -32,12 +32,6 @@ public class DetectDaoTest {
             System.out.println(detect);
     }
 
-    @Test
-    public void getDetectDevices() throws Exception {
-        List<DetectDevice> detectDevices = detectDao.getDetectDevices(1000);
-        for(DetectDevice detectDevice : detectDevices)
-            System.out.println(detectDevice);
-    }
 
     @Test
     public void insertDetect() throws Exception {
@@ -54,21 +48,35 @@ public class DetectDaoTest {
     public void insertDetectDevice() throws Exception {
         DetectDevice detectDevice = new DetectDevice();
         detectDevice.setDeviceClass("插座");
-        detectDevice.setBroken(0);
-        detectDevice.setNormal(0);
-        detectDevice.setRepairing(0);
-        detectDevice.setMark("mark");
-        detectDao.insertDetectDevice(detectDevice, 1001);
+        detectDevice.setDeviceId(1008);
+        detectDevice.setState(1);
+        detectDao.insertDetectDevice(detectDevice,1000);
+    }
+
+    @Test
+    public void getDetectDevices() throws Exception {
+        List<DetectDevice> detectDevices = detectDao.getDetectDevices("插座",1000);
+        for(DetectDevice detectDevice : detectDevices)
+            System.out.println(detectDevice);
     }
 
     @Test
     public void updateDetectDevice() throws Exception {
         DetectDevice detectDevice = new DetectDevice();
-        detectDevice.setDeviceClass("插座");
-        detectDevice.setNormal(10);
-        detectDevice.setRepairing(0);
-        detectDevice.setBroken(0);
-        detectDevice.setMark("mark");
+        detectDevice.setState(2);
+        detectDevice.setDeviceId(1000);
         detectDao.updateDetectDevice(detectDevice,1000);
+    }
+
+    @Test
+    public void getDetectNum() throws Exception {
+        System.out.println(detectDao.getDetectNum(1000));
+    }
+
+    @Test
+    public void getDeviceClassByDetectId() throws Exception {
+        List<String> list = detectDao.getDeviceClassByDetectId(1000);
+        for(String s : list)
+            System.out.println(s);
     }
 }

@@ -1,5 +1,6 @@
 package com.repair.web;
 
+import com.repair.entity.address.Address;
 import com.repair.entity.address.FirstAddress;
 import com.repair.entity.address.SecondAddress;
 import com.repair.entity.detect.Detect;
@@ -10,7 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/detect")
@@ -47,19 +50,33 @@ public class DetectController {
      */
     @ResponseBody
     @RequestMapping(value = "/{detectId}/devices", method = RequestMethod.GET)
-    public List<DetectDevice> getDetectDevices(@PathVariable("detectId") String detectId){
-        return detectService.getDetectDevices(Integer.parseInt(detectId));
+    public Map<String,Object> getDetectDevices(@PathVariable("detectId") String detectId){
+        List<String> deviceClasses = detectService.getDeviceClassByDetectId(Integer.parseInt(detectId));
+        Address address = detectService.getAddressByDetectId(Integer.parseInt(detectId));
+        Integer detetctedNum = detectService.getSecondAddrNum(Integer.parseInt(detectId));
+        Map<String, Object> map = new HashMap<>();
+        map.put("address", address);
+        map.put("detectedNum",detetctedNum);
+        map.put("deviceClasses", deviceClasses);
+        return map;
     }
 
 
     /**
-     * 获取所有一级地点
+     * 获取所有一级地点,及一级地点中二级地点的数量
      * @return
      */
     @ResponseBody
     @RequestMapping(value = "/firstAddr")
-    public List<FirstAddress> getAllFirstAddress(){
-        return detectService.getAllFirstAddress();
+    public Map<String, Object> getAllFirstAddress(){
+//        return detectService.getAllFirstAddress();
+        Map<String, Object> map = new HashMap<>();
+        List<FirstAddress> firstAddresses = detectService.getAllFirstAddress();
+        for(FirstAddress firstAddress : firstAddresses){
+            Integer detectedNum = detectService.getSecondAddrNum(firstAddress.getFirstNo());
+            map.put(firstAddress.getName()+"", detectedNum);
+        }
+        return map;
     }
 
     /**
@@ -98,31 +115,39 @@ public class DetectController {
     }
 
     /**
+     * 在开始新的巡检里点击确定 同时将标志位设置为1:已完成s
      * 插入巡检计划和巡检计划的设备
      * @param firstAddr 通过url传参
      * @param secondAddr
-     * @param request 通过request传参，将List<DetectDevice>封装进request请求中
      */
     @RequestMapping(value = "/{firstAddr}/{secondAddr}/addDetect")
     public void insertDetect(@PathVariable("firstAddr")Integer firstAddr,
-                                @PathVariable("secondAddr") Integer secondAddr, HttpServletRequest request){
+                                @PathVariable("secondAddr") Integer secondAddr, @RequestBody List<DetectDevice> detectDevices){
         Integer detectId = detectService.insertDetect(firstAddr,secondAddr);
-        List<DetectDevice> detectDevices = (List<DetectDevice>) request.getAttribute("detectDevices");
         for(DetectDevice detectDevice : detectDevices)
             detectService.insertDetectDevice(detectDevice, detectId);
+        detectService.setDetectState(detectId,1);
     }
 
 
     /**
      * 更新一个计划中的设备的信息  点击保存进行中的巡检计划
      * @param detectId
-     * @param request 将新的设备的信息封装进request中
      */
     @RequestMapping(value = "/unFinishDetect/{detectId}/save")
-    public void updateDetectDevice(@PathVariable("detectId")Integer detectId, HttpServletRequest request){
-        List<DetectDevice> detectDevices = (List<DetectDevice>) request.getAttribute("detectDevices");
-        for(DetectDevice detectDevice : detectDevices)
-            detectService.updateDetectDevice(detectDevice,detectId);
+    public void updateDetectDevice(@PathVariable("detectId")Integer detectId, @RequestBody List<DetectDevice> detectDevices){
+        deviceAdd(detectDevices,detectId);
+    }
+
+    /**
+     * 在进行中的巡检里面点击确定
+     * 保存数据的同时将巡检的状态设置为已完成
+     * @param detectId
+     * @param detectDevices
+     */
+    @RequestMapping(value = "/unFinishDetect/{detectId}/confirm")
+    public void addDetect(@PathVariable("detectId")Integer detectId,@RequestBody List<DetectDevice> detectDevices){
+        deviceAdd(detectDevices,detectId);
         detectService.setDetectState(detectId,1);
     }
 
@@ -131,5 +156,9 @@ public class DetectController {
         detectService.singature(detectId);
     }
 
+    private void deviceAdd(List<DetectDevice> detectDevices, Integer detectId){
+        for(DetectDevice detectDevice : detectDevices)
+            detectService.updateDetectDevice(detectDevice,detectId);
+    }
 
 }
