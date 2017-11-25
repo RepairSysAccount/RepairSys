@@ -4,13 +4,13 @@
 <mapper namespace="com.repair.dao.DetectSpDAO">
 
     <select id="getAllDetectSp" resultType="com.repair.entity.detect.DetectSp">
-        select fa.name as first_addr,sa.name as second_addr,tb_Device.device_class as device_class,
+        select  sa.first_no as first_addr_no,sa.second_no as second_addr_no,fa.name as first_addr,sa.name as second_addr,tb_Device.device_class as device_class,
         count(*) as detect_number
         from tb_DetectSpecially ds,tb_FirstAddr fa,tb_SecondAddr sa,tb_Device
         where fa.first_no=sa.second_no
         and ds.second_id=sa.second_no
         and tb_Device.device_id=ds.device_id
         and ds.first_addr=fa.first_no
-		group by fa.name,sa.name,tb_Device.device_class
+        group by sa.first_no,sa.second_no,fa.name,sa.name,tb_Device.device_class
     </select>
 </mapper>
