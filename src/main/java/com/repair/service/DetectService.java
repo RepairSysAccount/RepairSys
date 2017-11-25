@@ -1,5 +1,6 @@
 package com.repair.service;
 
+import com.repair.entity.address.Address;
 import com.repair.entity.address.FirstAddress;
 import com.repair.entity.address.SecondAddress;
 import com.repair.entity.detect.Detect;
@@ -81,5 +82,8 @@ public interface DetectService {
 
     //签名 将巡检计划的state改为2
     void singature(Integer detectId);
+
+    //根据巡检id获取详细的地点,包括一级地点和二级地点
+    Address getAddressByDetectId(Integer detectId);
 
 }

@@ -15,4 +15,10 @@
     <select id="getSecondAddrNum" resultType="java.lang.Integer">
         select count(*) from tb_SecondAddr where first_no=#{id}
     </select>
+
+    <select id="getAddressByDetectId" resultType="com.repair.entity.address.Address">
+        select f.name as first_addr, s.name as second_addr
+        from tb_Detect d, tb_FirstAddr f, tb_SecondAddr s
+        where d.first_addr=f.first_no and d.second_addr=s.second_no and d.number=#{detectId}
+    </select>
 </mapper>

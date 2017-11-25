@@ -1,6 +1,7 @@
 package com.repair.dao;
 
 import com.repair.dao.AddressDao;
+import com.repair.entity.address.Address;
 import com.repair.entity.address.FirstAddress;
 import com.repair.entity.address.SecondAddress;
 import org.junit.Test;
@@ -37,5 +38,11 @@ public class AddressDaoTest {
     public void getSecondAddrNum() throws Exception {
         Integer num = addressDao.getSecondAddrNum(1000);
         System.out.println(num);
+    }
+
+    @Test
+    public void getAddressByDetectId() throws Exception {
+        Address address = addressDao.getAddressByDetectId(1000);
+        System.out.println(address);
     }
 }

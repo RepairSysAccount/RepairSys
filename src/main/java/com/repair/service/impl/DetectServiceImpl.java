@@ -3,6 +3,7 @@ package com.repair.service.impl;
 import com.repair.dao.AddressDao;
 import com.repair.dao.DetectDao;
 import com.repair.dao.DeviceDao;
+import com.repair.entity.address.Address;
 import com.repair.entity.address.FirstAddress;
 import com.repair.entity.address.SecondAddress;
 import com.repair.entity.detect.Detect;
@@ -82,5 +83,10 @@ public class DetectServiceImpl implements DetectService {
     @Override
     public void singature(Integer detectId) {
         detectDao.singature(detectId);
+    }
+
+    @Override
+    public Address getAddressByDetectId(Integer detectId) {
+        return  addressDao.getAddressByDetectId(detectId);
     }
 }
