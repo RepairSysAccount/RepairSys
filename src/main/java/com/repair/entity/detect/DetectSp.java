@@ -3,6 +3,8 @@ package com.repair.entity.detect;
 
 
 public class DetectSp {
+    private Integer firstAddrNo;
+    private Integer secondAddrNo;
     private String deviceClass;
     private String firstAddr;
     private String secondAddr;
@@ -11,22 +13,29 @@ public class DetectSp {
     public DetectSp() {
     }
 
-    public DetectSp(String deviceClass, String firstAddr, String secondAddr, Integer detectNumber) {
+    public DetectSp(Integer firstAddrNo, Integer secondAddrNo, String deviceClass, String firstAddr, String secondAddr, Integer detectNumber) {
+        this.firstAddrNo = firstAddrNo;
+        this.secondAddrNo = secondAddrNo;
         this.deviceClass = deviceClass;
         this.firstAddr = firstAddr;
         this.secondAddr = secondAddr;
         this.detectNumber = detectNumber;
-
     }
 
-    @Override
-    public String toString() {
-        return "DetectSp{" +
-                "deviceClass='" + deviceClass + '\'' +
-                ", firstAddr='" + firstAddr + '\'' +
-                ", secondAddr='" + secondAddr + '\'' +
-                ", detectNumber=" + detectNumber +
-                '}';
+    public Integer getFirstAddrNo() {
+        return firstAddrNo;
+    }
+
+    public void setFirstAddrNo(Integer firstAddrNo) {
+        this.firstAddrNo = firstAddrNo;
+    }
+
+    public Integer getSecondAddrNo() {
+        return secondAddrNo;
+    }
+
+    public void setSecondAddrNo(Integer secondAddrNo) {
+        this.secondAddrNo = secondAddrNo;
     }
 
     public String getDeviceClass() {
@@ -59,5 +68,17 @@ public class DetectSp {
 
     public void setDetectNumber(Integer detectNumber) {
         this.detectNumber = detectNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "DetectSp{" +
+                "firstAddrNo=" + firstAddrNo +
+                ", secondAddrNo=" + secondAddrNo +
+                ", deviceClass='" + deviceClass + '\'' +
+                ", firstAddr='" + firstAddr + '\'' +
+                ", secondAddr='" + secondAddr + '\'' +
+                ", detectNumber=" + detectNumber +
+                '}';
     }
 }
