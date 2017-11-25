@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-@Service("detectService")
+@Service("detectSpService")
 public class DetectSpServiceImpl implements DetectSpService {
     @Autowired
     private DetectSpDAO detectSpDAO;

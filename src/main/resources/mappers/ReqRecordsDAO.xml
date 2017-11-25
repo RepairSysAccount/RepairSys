@@ -1,0 +1,41 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repair.dao.ReqRecordsDAO">
+
+    <insert id="InsertReqRecord">
+        insert into
+        tb_ReqRecords(device_class,device_id,first_addr,second_addr,details,request_man,charge_man,req_time,finish_time,state,sources,urgency_degree,remark,photo) values(
+        #{reqRecord.deviceClass},
+        #{reqRecord.deviceId},
+        #{reqRecord.firstAddr},
+        #{reqRecord.secondAddr},
+        #{reqRecord.details},
+        #{reqRecord.requestMan},
+        #{reqRecord.chargeMan},
+        #{reqRecord.reqTime},
+        #{reqRecord.finishTime},
+        #{reqRecord.state},
+        #{reqRecord.sources},
+        #{reqRecord.urgencyDegree},
+        #{reqRecord.remark},
+        #{reqRecord.photo}
+        )
+    </insert>
+
+    <select id="getAllReqRecord" resultType="com.repair.entity.reqrepair.ReqRecord">
+        select * from tb_ReqRecords
+    </select>
+
+    <select id="getAddressDeviceNum" resultType="java.lang.Integer">
+        select count(device_id)
+        from tb_Device
+        where first_addr=#{firstAddr} and second_addr=#{secondAddr}
+    </select>
+
+    <select id="getAddressClassNum" resultType="java.lang.Integer">
+        select count(distinct device_class)
+        from tb_Device
+        where first_addr=#{firstAddr} and second_addr=#{secondAddr}
+    </select>
+</mapper>
